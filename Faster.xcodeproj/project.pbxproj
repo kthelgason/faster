@@ -39,6 +39,7 @@
 /* Begin PBXFileReference section */
 		4D668B1F84D8866F7C735D5E /* Pods-Faster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Faster/Pods-Faster.debug.xcconfig"; sourceTree = "<group>"; };
 		BF15CDA1ABCD1B0FC98D8486 /* libPods-Faster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Faster.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5A0445C1B31BB84008B8FA9 /* Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bridge.h; path = ../Bridge.h; sourceTree = "<group>"; };
 		F5B12FD91B319B5000C367E6 /* Faster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Faster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B12FDC1B319B5000C367E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5B12FDE1B319B5000C367E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +121,7 @@
 		F5B12FDB1B319B5000C367E6 /* Faster */ = {
 			isa = PBXGroup;
 			children = (
+				F5A0445C1B31BB84008B8FA9 /* Bridge.h */,
 				F5B12FDC1B319B5000C367E6 /* AppDelegate.swift */,
 				F5B12FDE1B319B5000C367E6 /* ViewController.swift */,
 				F5B12FE01B319B5000C367E6 /* Main.storyboard */,
@@ -221,6 +223,7 @@
 		F5B12FD11B319B5000C367E6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Kari Tristan Helgason";
 				TargetAttributes = {
@@ -469,11 +472,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Faster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = is.sigsegv.Faster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = Bridge.h;
 			};
 			name = Debug;
 		};
@@ -484,11 +490,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Faster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = is.sigsegv.Faster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = Bridge.h;
 			};
 			name = Release;
 		};

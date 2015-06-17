@@ -8,16 +8,27 @@
 
 import UIKit
 import AVFoundation
+import AVKit
 
 class ViewController: UIViewController {
-
-    var player:     AVPlayer?;
-    var playerItem: AVPlayerItem?;
+    
+    @IBOutlet weak var urlField: UITextField!
+    @IBOutlet weak var playButton: UIButton!
+    
     
     override func viewDidLoad() {
-        let url = NSURL(fileURLWithPath: "https://youtu.be/DMtwq3QtddY");
-        player = AVPlayer(URL: url);
+        super.viewDidLoad();
+    }
+    
+    func playVideo() {
+        let videos = HCYoutubeParser.h264videosWithYoutubeURL(NSURL(string: "https://www.youtube.com/watch?v=sMDQOHdAlKM")) as NSDictionary;
         
+        
+        let playerVC = AVPlayerViewController();
+        playerVC.player = AVPlayer(URL: NSURL(string: videos.objectForKey("medium") as! String)!);
+        self.presentViewController(playerVC, animated: true, completion: nil);
+        
+        playerVC.player!.rate = 2.0;
     }
 
 }

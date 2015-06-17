@@ -17,13 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
-        let playerVC = AVPlayerViewController();
-        playerVC.player = AVPlayer(URL: NSURL(fileURLWithPath: "https://youtu.be/DMtwq3QtddY"));
-        self.window?.rootViewController = playerVC;
-        
-        self.window?.makeKeyAndVisible();
-        
         return true
     }
 
