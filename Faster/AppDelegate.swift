@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVFoundation
+import AVKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let playerVC = AVPlayerViewController();
+        playerVC.player = AVPlayer(URL: NSURL(fileURLWithPath: "https://youtu.be/DMtwq3QtddY"));
+        self.window?.rootViewController = playerVC;
+        
+        self.window?.makeKeyAndVisible();
+        
         return true
     }
 
