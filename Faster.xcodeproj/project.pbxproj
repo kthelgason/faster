@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D7BBBA6D8C52F7199CD682E1 /* libPods-Faster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF15CDA1ABCD1B0FC98D8486 /* libPods-Faster.a */; };
+		F5527DFD1B41F909000E0C65 /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5527DFC1B41F908000E0C65 /* OverlayView.xib */; };
+		F5527DFF1B41FAEF000E0C65 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5527DFE1B41FAEF000E0C65 /* OverlayView.swift */; };
 		F5B12FDD1B319B5000C367E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B12FDC1B319B5000C367E6 /* AppDelegate.swift */; };
 		F5B12FDF1B319B5000C367E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B12FDE1B319B5000C367E6 /* ViewController.swift */; };
 		F5B12FE21B319B5000C367E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5B12FE01B319B5000C367E6 /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 /* Begin PBXFileReference section */
 		4D668B1F84D8866F7C735D5E /* Pods-Faster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Faster/Pods-Faster.debug.xcconfig"; sourceTree = "<group>"; };
 		BF15CDA1ABCD1B0FC98D8486 /* libPods-Faster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Faster.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5527DFC1B41F908000E0C65 /* OverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverlayView.xib; sourceTree = "<group>"; };
+		F5527DFE1B41FAEF000E0C65 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		F5A0445C1B31BB84008B8FA9 /* Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bridge.h; path = ../Bridge.h; sourceTree = "<group>"; };
 		F5B12FD91B319B5000C367E6 /* Faster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Faster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B12FDC1B319B5000C367E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 				F5A0445C1B31BB84008B8FA9 /* Bridge.h */,
 				F5B12FDC1B319B5000C367E6 /* AppDelegate.swift */,
 				F5B12FDE1B319B5000C367E6 /* ViewController.swift */,
+				F5527DFE1B41FAEF000E0C65 /* OverlayView.swift */,
+				F5527DFC1B41F908000E0C65 /* OverlayView.xib */,
 				F5B12FE01B319B5000C367E6 /* Main.storyboard */,
 				F5B12FE31B319B5000C367E6 /* Assets.xcassets */,
 				F5B12FE51B319B5000C367E6 /* LaunchScreen.storyboard */,
@@ -267,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5B12FE71B319B5000C367E6 /* LaunchScreen.storyboard in Resources */,
+				F5527DFD1B41F909000E0C65 /* OverlayView.xib in Resources */,
 				F5B12FE41B319B5000C367E6 /* Assets.xcassets in Resources */,
 				F5B12FE21B319B5000C367E6 /* Main.storyboard in Resources */,
 			);
@@ -326,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5527DFF1B41FAEF000E0C65 /* OverlayView.swift in Sources */,
 				F5B12FDF1B319B5000C367E6 /* ViewController.swift in Sources */,
 				F5B12FDD1B319B5000C367E6 /* AppDelegate.swift in Sources */,
 			);

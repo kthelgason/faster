@@ -46,18 +46,6 @@
                                     <action selector="playButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qsZ-i6-sch"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Playback Speed:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiY-3l-oJh">
-                                <rect key="frame" x="187" y="182" width="150" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTj-cv-zq6">
-                                <rect key="frame" x="361" y="189" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -65,15 +53,11 @@
                             <constraint firstItem="CsK-k9-J5O" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6c9-sB-IsO"/>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="uGm-d7-65R" secondAttribute="trailing" constant="10" id="BwF-Xv-UBZ"/>
                             <constraint firstItem="uGm-d7-65R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LhI-s9-hkk"/>
-                            <constraint firstItem="hTj-cv-zq6" firstAttribute="top" secondItem="Chc-ZH-czx" secondAttribute="bottom" constant="27" id="Rnd-Cl-pye"/>
                             <constraint firstItem="Chc-ZH-czx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tsa-2r-E9j"/>
-                            <constraint firstItem="kiY-3l-oJh" firstAttribute="leading" secondItem="uGm-d7-65R" secondAttribute="leading" id="U5U-6V-kc9"/>
                             <constraint firstItem="CsK-k9-J5O" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="XZG-Ji-vpi"/>
                             <constraint firstItem="Chc-ZH-czx" firstAttribute="top" secondItem="uGm-d7-65R" secondAttribute="bottom" constant="8" id="ZjE-gt-sR9"/>
                             <constraint firstItem="CsK-k9-J5O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kel-rX-yCn"/>
-                            <constraint firstItem="hTj-cv-zq6" firstAttribute="trailing" secondItem="uGm-d7-65R" secondAttribute="trailing" id="n5j-BR-lZi"/>
                             <constraint firstItem="uGm-d7-65R" firstAttribute="top" secondItem="CsK-k9-J5O" secondAttribute="bottom" constant="18.5" id="nvH-Ex-Scm"/>
-                            <constraint firstItem="kiY-3l-oJh" firstAttribute="top" secondItem="Chc-ZH-czx" secondAttribute="bottom" constant="20" id="sWf-vk-xel"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -84,7 +68,6 @@
                     </view>
                     <connections>
                         <outlet property="playButton" destination="Chc-ZH-czx" id="nSS-06-jfc"/>
-                        <outlet property="playbackSpeedLabel" destination="hTj-cv-zq6" id="6mo-lA-Gpf"/>
                         <outlet property="urlField" destination="uGm-d7-65R" id="HCb-46-mD5"/>
                     </connections>
                 </viewController>

@@ -13,21 +13,15 @@ import AVKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var urlField: UITextField!
-    @IBOutlet weak var playbackSpeedLabel: UILabel!
     @IBOutlet weak var playButton: UIButton!
     
     var playbackSpeed: Float = 1.0;
     let playerVC = AVPlayerViewController();
     
+    let overlayView = OverlayView();
     
     override func viewDidLoad() {
         super.viewDidLoad();
-        updateSpeedLabel();
-    }
-    
-    func updateSpeedLabel() {
-        let roundedSpeed = Float(Int(self.playbackSpeed * 100)) / 100;
-        self.playbackSpeedLabel.text = roundedSpeed.description;
     }
     
     func playVideoAt(url: NSURL) {
@@ -54,9 +48,14 @@ class ViewController: UIViewController {
     
     func rotationRecognized(sender: UIRotationGestureRecognizer) {
         print("rotation: \(sender.rotation)");
-        self.playbackSpeed += Float(sender.rotation) * 0.1;
+        self.playbackSpeed += Float(sender.rotation) * 0.02;
         self.playbackSpeed = min(max(self.playbackSpeed, 0.0), 2.0);
         playerVC.player!.rate = self.playbackSpeed;
+        
+        overlayView.setSpeed(self.playbackSpeed);
+        
+        playerVC.contentOverlayView?.addSubview(overlayView);
+        
     }
     
     
