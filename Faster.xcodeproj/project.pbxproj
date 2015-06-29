@@ -17,7 +17,6 @@
 		F5B12FFD1B319B5000C367E6 /* FasterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B12FFC1B319B5000C367E6 /* FasterUITests.swift */; };
 		F5B1300D1B31A23B00C367E6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B1300C1B31A23B00C367E6 /* AVFoundation.framework */; };
 		F5B130111B31A89C00C367E6 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B130101B31A89C00C367E6 /* AVKit.framework */; };
-		F5DFBAF41B4027EA0014FEC3 /* FasterPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DFBAF31B4027EA0014FEC3 /* FasterPlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +55,6 @@
 		F5B12FFE1B319B5000C367E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5B1300C1B31A23B00C367E6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F5B130101B31A89C00C367E6 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
-		F5DFBAF31B4027EA0014FEC3 /* FasterPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FasterPlayerViewController.swift; sourceTree = "<group>"; };
 		F96470AA2251A26DF9A73067 /* Pods-Faster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Faster/Pods-Faster.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,7 +124,6 @@
 				F5A0445C1B31BB84008B8FA9 /* Bridge.h */,
 				F5B12FDC1B319B5000C367E6 /* AppDelegate.swift */,
 				F5B12FDE1B319B5000C367E6 /* ViewController.swift */,
-				F5DFBAF31B4027EA0014FEC3 /* FasterPlayerViewController.swift */,
 				F5B12FE01B319B5000C367E6 /* Main.storyboard */,
 				F5B12FE31B319B5000C367E6 /* Assets.xcassets */,
 				F5B12FE51B319B5000C367E6 /* LaunchScreen.storyboard */,
@@ -330,7 +327,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5B12FDF1B319B5000C367E6 /* ViewController.swift in Sources */,
-				F5DFBAF41B4027EA0014FEC3 /* FasterPlayerViewController.swift in Sources */,
 				F5B12FDD1B319B5000C367E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

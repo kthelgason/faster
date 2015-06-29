@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var urlField: UITextField!
     @IBOutlet weak var playbackSpeedLabel: UILabel!
     @IBOutlet weak var playButton: UIButton!
-    @IBOutlet var rotationRecognizer: UIRotationGestureRecognizer!
     
     var playbackSpeed: Float = 1.0;
     
@@ -32,10 +31,12 @@ class ViewController: UIViewController {
     
     func playVideoAt(url: NSURL) {
         let videos = HCYoutubeParser.h264videosWithYoutubeURL(url) as NSDictionary;
-        
-        
         let playerVC = AVPlayerViewController();
+        let rotationRecognizer = UIRotationGestureRecognizer(target: self, action: Selector("rotationRecognized"));
+
         playerVC.player = AVPlayer(URL: NSURL(string: videos.objectForKey("medium") as! String)!);
+        playerVC.view.addGestureRecognizer(rotationRecognizer);
+        
         self.presentViewController(playerVC, animated: true, completion: nil);
         
         playerVC.player!.rate = self.playbackSpeed;
@@ -51,11 +52,10 @@ class ViewController: UIViewController {
         self.presentViewController(alert, animated: true, completion: nil);
     }
     
-    @IBAction func rotationRecognized(sender: UIRotationGestureRecognizer) {
-        //print("rotation: \(sender.rotation)");
-        self.playbackSpeed = min(max(Float(sender.rotation), 0.0), 4.0);
-        
-        updateSpeedLabel();
+    func rotationRecognized(sender: UIRotationGestureRecognizer) {
+        print("rotation: \(sender.rotation)");
+        self.playbackSpeed += Float(sender.rotation) * 0.1;
+        self.playbackSpeed = min(max(self.playbackSpeed, 0.0), 2.0);
     }
     
     

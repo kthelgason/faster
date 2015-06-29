@@ -32,9 +32,6 @@
                                         <exclude reference="cdg-SQ-yG0"/>
                                     </mask>
                                 </variation>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="QsQ-K5-2No" appends="YES" id="Wd1-GZ-7GC"/>
-                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Youtube URL:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsK-k9-J5O">
                                 <rect key="frame" x="225" y="55" width="150" height="20.5"/>
@@ -84,23 +81,14 @@
                                 <exclude reference="6c9-sB-IsO"/>
                             </mask>
                         </variation>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="QsQ-K5-2No" appends="YES" id="JOj-Kc-gBd"/>
-                        </connections>
                     </view>
                     <connections>
                         <outlet property="playButton" destination="Chc-ZH-czx" id="nSS-06-jfc"/>
                         <outlet property="playbackSpeedLabel" destination="hTj-cv-zq6" id="6mo-lA-Gpf"/>
-                        <outlet property="rotationRecognizer" destination="QsQ-K5-2No" id="L2b-GH-9S5"/>
                         <outlet property="urlField" destination="uGm-d7-65R" id="HCb-46-mD5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <rotationGestureRecognizer id="QsQ-K5-2No">
-                    <connections>
-                        <action selector="rotationRecognized:" destination="BYZ-38-t0r" id="gzj-m5-lPk"/>
-                    </connections>
-                </rotationGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="349" y="537"/>
         </scene>
