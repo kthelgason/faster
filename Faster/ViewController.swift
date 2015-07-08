@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     var playbackSpeed: Float = 1.0;
     let playerVC = AVPlayerViewController();
     
-    let overlayView = OverlayView();
+    let overlayView = NSBundle.mainBundle().loadNibNamed("OverlayView", owner: nil, options: nil)[0] as! OverlayView
     
     override func viewDidLoad() {
         super.viewDidLoad();
