@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var playButton: UIButton!
     
     var playbackSpeed: Float = 1.0;
+    var lastRotation: Float = 0.0;
     let playerVC = AVPlayerViewController();
     
     let overlayView = NSBundle.mainBundle().loadNibNamed("OverlayView", owner: nil, options: nil)[0] as! OverlayView
@@ -25,9 +26,10 @@ class ViewController: UIViewController {
     }
     
     func playVideoAt(url: NSURL) {
-        let videos = HCYoutubeParser.h264videosWithYoutubeURL(url) as NSDictionary;
+        let videos: NSDictionary = HCYoutubeParser.h264videosWithYoutubeURL(url);
         let rotationRecognizer = UIRotationGestureRecognizer(target: self, action: Selector("rotationRecognized:"));
 
+        // TODO: Select highest profile
         playerVC.player = AVPlayer(URL: NSURL(string: videos.objectForKey("medium") as! String)!);
         playerVC.view.addGestureRecognizer(rotationRecognizer);
         
@@ -47,13 +49,17 @@ class ViewController: UIViewController {
     }
     
     func rotationRecognized(sender: UIRotationGestureRecognizer) {
-        print("rotation: \(sender.rotation)");
-        self.playbackSpeed += Float(sender.rotation) * 0.02;
-        self.playbackSpeed = min(max(self.playbackSpeed, 0.0), 2.0);
-        playerVC.player!.rate = self.playbackSpeed;
+        let delta = Float(sender.rotation) - self.lastRotation;
+        print("rotation: \(sender.rotation), delta: \(delta)");
+        self.playbackSpeed += delta * 0.3;
+        self.playbackSpeed = min(max(self.playbackSpeed, 0.1), 2.0);
+        self.lastRotation = Float(sender.rotation);
         
+        playerVC.player?.rate = self.playbackSpeed;
         overlayView.setSpeed(self.playbackSpeed);
         
+        overlayView.frame = self.view.frame;
+
         playerVC.contentOverlayView?.addSubview(overlayView);
         
     }
