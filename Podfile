@@ -1,5 +1,5 @@
 target 'Faster' do
-    pod 'HCYoutubeParser', '~> 0.0'
+    pod 'HCYoutubeParser', :git => 'https://github.com/kthelgason/HCYoutubeParser.git'
 end
 
 target 'FasterTests' do

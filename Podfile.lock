@@ -1,10 +1,21 @@
 PODS:
-  - HCYoutubeParser (0.0.2)
+  - HCYoutubeParser (0.0.5)
 
 DEPENDENCIES:
-  - HCYoutubeParser (~> 0.0)
+  - HCYoutubeParser (from `https://github.com/kthelgason/HCYoutubeParser.git`)
+
+EXTERNAL SOURCES:
+  HCYoutubeParser:
+    :git: https://github.com/kthelgason/HCYoutubeParser.git
+
+CHECKOUT OPTIONS:
+  HCYoutubeParser:
+    :commit: 4171f135f9ace665bb795c5ae164a3380903cbd1
+    :git: https://github.com/kthelgason/HCYoutubeParser.git
 
 SPEC CHECKSUMS:
-  HCYoutubeParser: cdfef410cd2ce6ee538a07ee4a1c9ed29069f544
+  HCYoutubeParser: bc1db8c062e4b835eda381f2be2f9970f6a8d071
 
-COCOAPODS: 0.37.2
+PODFILE CHECKSUM: 936057614b49314a99656e6e91d8c1b8bafe67e1
+
+COCOAPODS: 1.0.0.beta.4

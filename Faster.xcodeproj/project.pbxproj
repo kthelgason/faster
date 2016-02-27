@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D7BBBA6D8C52F7199CD682E1 /* libPods-Faster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF15CDA1ABCD1B0FC98D8486 /* libPods-Faster.a */; };
+		47AAA49F2EC0807ECB4799E9 /* libPods-Faster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A807479DBC92240855442FB3 /* libPods-Faster.a */; };
+		5709A57FB932C8A0F3DE96B6 /* libPods-FasterUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CC6FD8FB6474DBE89BA841 /* libPods-FasterUITests.a */; };
+		C3A0E96C91EE8CE54A514488 /* libPods-FasterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 845E9B8EBABE64D81DAB2B44 /* libPods-FasterTests.a */; };
 		F5527DFD1B41F909000E0C65 /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5527DFC1B41F908000E0C65 /* OverlayView.xib */; };
 		F5527DFF1B41FAEF000E0C65 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5527DFE1B41FAEF000E0C65 /* OverlayView.swift */; };
 		F5B12FDD1B319B5000C367E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B12FDC1B319B5000C367E6 /* AppDelegate.swift */; };
@@ -39,8 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4D668B1F84D8866F7C735D5E /* Pods-Faster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Faster/Pods-Faster.debug.xcconfig"; sourceTree = "<group>"; };
-		BF15CDA1ABCD1B0FC98D8486 /* libPods-Faster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Faster.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E7062425E118F7495948EFC /* Pods-FasterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FasterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FasterTests/Pods-FasterTests.release.xcconfig"; sourceTree = "<group>"; };
+		7A48454F5CE24B2D85FD6753 /* Pods-FasterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FasterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FasterTests/Pods-FasterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7CF4CC3E4D6D1A380D7F7A82 /* Pods-Faster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Faster/Pods-Faster.release.xcconfig"; sourceTree = "<group>"; };
+		845E9B8EBABE64D81DAB2B44 /* libPods-FasterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FasterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96CC6FD8FB6474DBE89BA841 /* libPods-FasterUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FasterUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2743B7071284AE4727DDEB9 /* Pods-FasterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FasterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FasterUITests/Pods-FasterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A337FC1E02B81252F5EFD72D /* Pods-Faster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Faster/Pods-Faster.debug.xcconfig"; sourceTree = "<group>"; };
+		A807479DBC92240855442FB3 /* libPods-Faster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Faster.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1B5C81B901B955008864F3C /* Pods-FasterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FasterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FasterUITests/Pods-FasterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F5527DFC1B41F908000E0C65 /* OverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverlayView.xib; sourceTree = "<group>"; };
 		F5527DFE1B41FAEF000E0C65 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		F5A0445C1B31BB84008B8FA9 /* Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bridge.h; path = ../Bridge.h; sourceTree = "<group>"; };
@@ -59,7 +68,6 @@
 		F5B12FFE1B319B5000C367E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5B1300C1B31A23B00C367E6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F5B130101B31A89C00C367E6 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
-		F96470AA2251A26DF9A73067 /* Pods-Faster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Faster/Pods-Faster.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +77,7 @@
 			files = (
 				F5B130111B31A89C00C367E6 /* AVKit.framework in Frameworks */,
 				F5B1300D1B31A23B00C367E6 /* AVFoundation.framework in Frameworks */,
-				D7BBBA6D8C52F7199CD682E1 /* libPods-Faster.a in Frameworks */,
+				47AAA49F2EC0807ECB4799E9 /* libPods-Faster.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3A0E96C91EE8CE54A514488 /* libPods-FasterTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,18 +93,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5709A57FB932C8A0F3DE96B6 /* libPods-FasterUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		777BEB3566289FB7BD2CC3C1 /* Frameworks */ = {
+		2724FD8F8AEBFE3A73312D7A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BF15CDA1ABCD1B0FC98D8486 /* libPods-Faster.a */,
+				A807479DBC92240855442FB3 /* libPods-Faster.a */,
+				845E9B8EBABE64D81DAB2B44 /* libPods-FasterTests.a */,
+				96CC6FD8FB6474DBE89BA841 /* libPods-FasterUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41A9D02E332333C7F80CA759 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A337FC1E02B81252F5EFD72D /* Pods-Faster.debug.xcconfig */,
+				7CF4CC3E4D6D1A380D7F7A82 /* Pods-Faster.release.xcconfig */,
+				7A48454F5CE24B2D85FD6753 /* Pods-FasterTests.debug.xcconfig */,
+				2E7062425E118F7495948EFC /* Pods-FasterTests.release.xcconfig */,
+				B1B5C81B901B955008864F3C /* Pods-FasterUITests.debug.xcconfig */,
+				A2743B7071284AE4727DDEB9 /* Pods-FasterUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		F5B12FD01B319B5000C367E6 = {
@@ -107,8 +132,8 @@
 				F5B12FF01B319B5000C367E6 /* FasterTests */,
 				F5B12FFB1B319B5000C367E6 /* FasterUITests */,
 				F5B12FDA1B319B5000C367E6 /* Products */,
-				F5E76C03454946839727B186 /* Pods */,
-				777BEB3566289FB7BD2CC3C1 /* Frameworks */,
+				41A9D02E332333C7F80CA759 /* Pods */,
+				2724FD8F8AEBFE3A73312D7A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,15 +181,6 @@
 			path = FasterUITests;
 			sourceTree = "<group>";
 		};
-		F5E76C03454946839727B186 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4D668B1F84D8866F7C735D5E /* Pods-Faster.debug.xcconfig */,
-				F96470AA2251A26DF9A73067 /* Pods-Faster.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,11 +188,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5B130011B319B5000C367E6 /* Build configuration list for PBXNativeTarget "Faster" */;
 			buildPhases = (
-				174AB974EA1CF7F5E27F2EB9 /* Check Pods Manifest.lock */,
+				3663A3EBE5376796FF6E8EA7 /* Check Pods Manifest.lock */,
 				F5B12FD51B319B5000C367E6 /* Sources */,
 				F5B12FD61B319B5000C367E6 /* Frameworks */,
 				F5B12FD71B319B5000C367E6 /* Resources */,
-				7CE312671B3C64DFB8FF2033 /* Copy Pods Resources */,
+				B928DDDFE1212A35F421FDA8 /* Embed Pods Frameworks */,
+				1E06D8656DB6533477F0EFA5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,9 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5B130041B319B5000C367E6 /* Build configuration list for PBXNativeTarget "FasterTests" */;
 			buildPhases = (
+				F719628B24DBB994499408A7 /* Check Pods Manifest.lock */,
 				F5B12FE91B319B5000C367E6 /* Sources */,
 				F5B12FEA1B319B5000C367E6 /* Frameworks */,
 				F5B12FEB1B319B5000C367E6 /* Resources */,
+				193EFCB97053B50359B70093 /* Embed Pods Frameworks */,
+				DE98980C58D29B74FA868F54 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,9 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5B130071B319B5000C367E6 /* Build configuration list for PBXNativeTarget "FasterUITests" */;
 			buildPhases = (
+				CF38C78AF6490A8F92BD100A /* Check Pods Manifest.lock */,
 				F5B12FF41B319B5000C367E6 /* Sources */,
 				F5B12FF51B319B5000C367E6 /* Frameworks */,
 				F5B12FF61B319B5000C367E6 /* Resources */,
+				43E09AF288D839EDE9F087D8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -296,7 +318,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		174AB974EA1CF7F5E27F2EB9 /* Check Pods Manifest.lock */ = {
+		193EFCB97053B50359B70093 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FasterTests/Pods-FasterTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E06D8656DB6533477F0EFA5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Faster/Pods-Faster-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3663A3EBE5376796FF6E8EA7 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -311,7 +363,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		7CE312671B3C64DFB8FF2033 /* Copy Pods Resources */ = {
+		43E09AF288D839EDE9F087D8 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -323,7 +375,67 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Faster/Pods-Faster-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FasterUITests/Pods-FasterUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B928DDDFE1212A35F421FDA8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Faster/Pods-Faster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF38C78AF6490A8F92BD100A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE98980C58D29B74FA868F54 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FasterTests/Pods-FasterTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F719628B24DBB994499408A7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -475,7 +587,7 @@
 		};
 		F5B130021B319B5000C367E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D668B1F84D8866F7C735D5E /* Pods-Faster.debug.xcconfig */;
+			baseConfigurationReference = A337FC1E02B81252F5EFD72D /* Pods-Faster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -494,7 +606,7 @@
 		};
 		F5B130031B319B5000C367E6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F96470AA2251A26DF9A73067 /* Pods-Faster.release.xcconfig */;
+			baseConfigurationReference = 7CF4CC3E4D6D1A380D7F7A82 /* Pods-Faster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -513,6 +625,7 @@
 		};
 		F5B130051B319B5000C367E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A48454F5CE24B2D85FD6753 /* Pods-FasterTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FasterTests/Info.plist;
@@ -525,6 +638,7 @@
 		};
 		F5B130061B319B5000C367E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E7062425E118F7495948EFC /* Pods-FasterTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FasterTests/Info.plist;
@@ -537,6 +651,7 @@
 		};
 		F5B130081B319B5000C367E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1B5C81B901B955008864F3C /* Pods-FasterUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = FasterUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -549,6 +664,7 @@
 		};
 		F5B130091B319B5000C367E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2743B7071284AE4727DDEB9 /* Pods-FasterUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = FasterUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
